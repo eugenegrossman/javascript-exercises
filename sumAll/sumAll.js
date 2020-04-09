@@ -1,4 +1,4 @@
-const sumAll = function() {
+const sumAll = function(min, max) {
 
   if(min>max) {
     let temp = min
@@ -15,7 +15,6 @@ const sumAll = function() {
     sum += i;
   }
   return sum;
-  }
 
 }
 

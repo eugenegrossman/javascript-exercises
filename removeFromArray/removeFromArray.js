@@ -1,4 +1,4 @@
-const removeFromArray = function() {
+const removeFromArray = function(...args) {
 
   // the very first item in our list of arguments is the array, we pull it out with args[0]
     const array = args[0];
@@ -9,7 +9,6 @@ const removeFromArray = function() {
       // push every element into the new array
       // UNLESS it is included in the function arguments
       // so we create a new array with every item, except those that should be removed
-      console.log(args);
       if (!args.includes(item)) {
         newArray.push(item);
       }
@@ -27,7 +26,5 @@ const removeFromArray = function() {
   //   return array.filter(val => !args.includes(val))
   // }
   //
-
-}
 
 module.exports = removeFromArray
